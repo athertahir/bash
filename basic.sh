@@ -54,3 +54,6 @@ none=$(tput sgr0)
 red=$(tput setab 0; tput setaf 1)
 flashred=$(tput setaf 0; tput setaf 1; tput bold)
 echo -e $flashred"Error:"$none$red" Wrong"$none
+
+# test tcp connection
+nc -v localhost 8081
